@@ -1,0 +1,1 @@
+SELECT DISTINCT tracks.Name TrackName, playlists.Name PlaylistName FROM playlist_track INNER JOIN tracks ON playlist_track.TrackId=tracks.TrackId INNER JOIN playlists ON playlist_track.PlaylistId=playlists.PlaylistId WHERE playlists.Name = 'TV Shows' LIMIT 100;
